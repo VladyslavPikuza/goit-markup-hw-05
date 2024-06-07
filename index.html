@@ -494,12 +494,37 @@
             </li>
           </ul>
         </div>
+        <div class="footer-in">
+          <p class="email-text">Subscribe</p>
+          <form class="footer-form">
+            <div class="footer-form-wrap">
+              <label for="footer-email" aria-label="email"></label>
+              <input
+                type="email"
+                id="footer-email"
+                name="footer-email"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-form-btn">
+                Subscribe
+                <svg class="icon footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button type="button" class="modal-close">x</button>
+        <button type="button" class="modal-close">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -511,6 +536,7 @@
                 class="modal-input"
                 required
                 id="user-name"
+                required
               />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-Vector"></use>
@@ -521,11 +547,12 @@
             <label for="user-phone" class="modal-label">Phone</label>
             <div class="modal-field-wrap">
               <input
-                type="text"
+                type="tel"
                 name="user-phone"
                 class="modal-input"
                 required
                 id="user-phone"
+                required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
@@ -541,6 +568,7 @@
                 class="modal-input"
                 required
                 id="user-mail"
+                required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
@@ -555,6 +583,23 @@
               class="modal-text"
               placeholder="Text input"
             ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="policy" class="modal-check-text"
+              ><span class="checkbox-container">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-policy">Privacy Policy</a></label
+            >
           </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
