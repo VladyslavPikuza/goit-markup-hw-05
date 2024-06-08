@@ -744,7 +744,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     margin: 0 auto;
     border-radius: 4px;
         padding: 16px 32px;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             background: #4d5ae5;
@@ -755,6 +755,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
                     text-align: center;
                     color: #fff;
                     border: none;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    cursor: pointer;
 }
 
 .modal-check-text {
