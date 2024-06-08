@@ -816,6 +816,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     height: 40px;
     background-color: transparent;
     padding: 0 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-input::placeholder {
@@ -842,6 +843,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .footer-icon {
