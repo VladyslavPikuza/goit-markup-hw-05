@@ -788,10 +788,13 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 /* Footer form */
 
 .footer-in {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
     margin-left: 80px;
 }
 
-.email-text {
+.footer-label {
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
@@ -800,11 +803,18 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         margin-bottom: 16px;
 }
 
-.footer-form {}
-
-.footer-form-wrap {
+.footer-form {
     display: flex;
+    gap:24px;
+    align-items: center;
+        justify-content: center;
 }
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .footer-input {
     border: 1px solid #fff;
@@ -830,13 +840,18 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         text-align: center;
         color: #fff;
         border-radius: 4px;
-            width: 100%;
+            min-width: 165px;
             height: 40px;
             background-color:  #4d5ae5;
             border: none;
             margin-left: 24px;
             padding: 8px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 
 .footer-icon {
+    margin-left: 16px;
+    fill: #fff;
 }
