@@ -788,13 +788,10 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 /* Footer form */
 
 .footer-in {
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
     margin-left: 80px;
 }
 
-.footer-label {
+.email-text {
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
@@ -806,15 +803,11 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 .footer-form {
     display: flex;
     gap:24px;
-    align-items: center;
-        justify-content: center;
 }
 
-.footer-wrap {
+.footer-form-wrap {
     display: flex;
-    flex-direction: column;
 }
-
 
 .footer-input {
     border: 1px solid #fff;
